@@ -22,7 +22,7 @@ class ProdutoController extends Controller
         });
         return response()->json($produtosComImagem);
     }
-    public function store(ProdutoRequest $request)
+    public function store(Request $request)
     {
         $produtoData = $request->all();
 
