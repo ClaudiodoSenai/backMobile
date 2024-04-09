@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ProdutoRequest;
 use App\Models\Produto;
 use Illuminate\Http\Request;
 
@@ -21,7 +22,7 @@ class ProdutoController extends Controller
         });
         return response()->json($produtosComImagem);
     }
-    public function store(Request $request)
+    public function store(ProdutoRequest $request)
     {
         $produtoData = $request->all();
 
