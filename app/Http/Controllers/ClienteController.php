@@ -19,9 +19,10 @@ class ClienteController extends Controller
             return [
                 'nome' => $cliente->nome,
                 'telefone' => $cliente->telefone,
+                'cpf' => $cliente->cpf,
                 'endereco' => $cliente->endereco,
                 'email'=> $cliente->email,
-                'password'=>$cliente->password,
+                'password'=>Hash::make($cliente->password),
                 'foto' => asset('storage/' . $cliente->foto),
             ];
         });
