@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 // Rotas Produtos 
 Route::get('/produtos',[ProdutoController::class,'index']);
 Route::post('/produtos/store',[ProdutoController::class,'store']);
+Route::get('/produtos/all',[ProdutoController::class,'retornarTodos']);
 
 //Rotas Cliente 
 Route::get('/cliente/index',[ClienteController::class,'indexCliente']);
