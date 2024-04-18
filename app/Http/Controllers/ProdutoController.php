@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProdutoRequest;
+use App\Models\CarrinhoItem;
 use App\Models\Produto;
 use Illuminate\Http\Request;
 
